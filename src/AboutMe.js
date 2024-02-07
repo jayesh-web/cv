@@ -139,7 +139,7 @@ function AboutUs() {
                 <div className="col-sm-5" style={{ backgroundColor: "#F8F8F8" }}>
                     <h5>FIND ME ONLINE</h5><hr className="field" />
                     <div className="d-flex align-items-center mr-3">
-                        <a href='https://www.linkedin.com/in/jayesh-k-b7b07b1a0/overlay/contact-info/' target="_blank">
+                        <a href='https://www.linkedin.com/in/jayesh-k-b7b07b1a0/' target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} style={{height:"50px"}} />
                         </a>
                         <div className='mx-4'>
