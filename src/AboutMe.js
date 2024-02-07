@@ -13,16 +13,17 @@ function AboutUs() {
             <div className="container">
                 <div className="row">
                     <div className=" col-sm-8 text-left mt-1">
-                        <center>
+                        {/* <center> */}
                             <h3 className="name">Jayesh Kumar</h3>
                             <h6 className="profession text-warning">Software Engineer</h6>
-                            <FontAwesomeIcon icon={faEnvelope}className='text-warning' /><email> jayesh.suthar07@gmail.com</email>
-                            <span className="mx-2">|</span> 
-<FontAwesomeIcon icon={faPhone}className='text-warning' />
-<phone> 9414624683</phone><span className="mx-2">|</span> 
+                            {/* <FontAwesomeIcon icon={faEnvelope}className='text-warning' /><email> jayesh.suthar07@gmail.com</email>
+                            <span className="mx-1">|</span> 
+                            <FontAwesomeIcon icon={faPhone}className='text-warning' />
+                            <phone> 9414624683</phone><span className="mx-1">|</span> 
 
-                            <FontAwesomeIcon icon={faLocation}className='text-warning' /><location> Ahmedabad</location>
-                            </center>
+                            <FontAwesomeIcon icon={faLocation}className='text-warning' /><location> Ahmedabad</location> */}
+                           <ContactInfo/>
+                            {/* </center> */}
                         <hr />
                     </div>
                     <div className="col-sm-4 mt-1">
@@ -51,14 +52,12 @@ function AboutUs() {
                     </div>
                     <div className="col-sm-5" style={{ backgroundColor: "#F8F8F8" }}>
                         <h5 >SKILLS</h5><hr className="field" />
-                        <img src="https://img.icons8.com/dusk/50/000000/python.png" alt="Python" />Python &emsp;
-                        {/* <img src={require('./django1.png')} height="50px" width="50px" alt="Django" /> &emsp; */}
-                        <img src="https://img.icons8.com/dusk/50/000000/sql.png" alt="SQL" /> &emsp;
-                        <img src="https://img.icons8.com/officel/50/000000/php-logo.png" alt="PHP" /> &emsp;
-                        <img src="https://img.icons8.com/officel/50/000000/html.png" alt="HTML" /> &emsp;
-                        {/* <img src={require('./git1.png')} height="60px" width="70px" alt="Git" /> &emsp;
-                        <img src={require('./bootstrap4.png')} height="60px" width="70px" alt="Bootstrap" /> &emsp; */}
-                        <hr />
+                        {/* <img src="https://img.icons8.com/dusk/50/000000/react.png" alt="Python" />React.js &emsp;
+                        <img src="https://img.icons8.com/fluency/50/node-js.png" alt="Nodejs" />Node.js &emsp;
+                        <img src="https://img.icons8.com/nolan/50/mongo-db.png" alt="Mongodb" />MongoDb&emsp;
+                        <img src="https://img.icons8.com/ios/50/express-js.png" alt="Express" />Express &emsp; */}
+                          <TechStack/>
+                          <hr />
                         <h5 >PASSIONS</h5><hr className="field" />
                         <FontAwesomeIcon icon ={faFutbol} className='text-warning'/> Sports <span className="fas fa-music text-warning ml-5"></span>
                        <hr/>
@@ -173,5 +172,49 @@ function AboutUs() {
         }
         return stars;
       };
+const ContactInfo = ()=>{
+    return (
+        <div className="d-flex flex-wrap">
+          <div className="d-flex align-items-center mr-3">
+            <FontAwesomeIcon icon={faEnvelope} className="text-warning" />
+            <email className="ml-2"> jayesh.suthar07@gmail.com</email>
+          </div>
+          {/* <span className="mx-1">|</span> */}
+          <div className="d-flex align-items-center mr-3">
+            <FontAwesomeIcon icon={faPhone} className="text-warning" />
+            <phone className="ml-2"> 9414624683</phone>
+          </div>
+          {/* <span className="mx-1">|</span> */}
+          <div className="d-flex align-items-center">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="text-warning" />
+            <location className="ml-2"> Ahmedabad</location>
+          </div>
+        </div>
+      );
+}
+
+
+const TechStack = ()=>{
+    return (
+        <div className="d-flex flex-wrap">
+          <div className="d-flex align-items-center m-1 mr-3">
+            <img src="https://img.icons8.com/dusk/50/000000/react.png" alt="React.js" />
+            <span className="ml-2">React.js</span>
+          </div>
+          <div className="d-flex align-items-center m-1 mr-3">
+            <img src="https://img.icons8.com/fluency/50/node-js.png" alt="Node.js" />
+            <span className="ml-2">Node.js</span>
+          </div>
+          <div className="d-flex align-items-center m-1 mr-3">
+            <img src="https://img.icons8.com/nolan/50/mongo-db.png" alt="MongoDb" />
+            <span className="ml-2">MongoDb</span>
+          </div>
+          <div className="d-flex align-items-center m-1">
+            <img src="https://img.icons8.com/ios/50/express-js.png" alt="Express" />
+            <span className="ml-2">Express</span>
+          </div>
+        </div>
+      );
+    }
 
     export default AboutUs;
