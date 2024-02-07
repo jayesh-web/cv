@@ -21,11 +21,11 @@ function MyTime() {
           legendText: "{label}",
           indexLabel: "{label}: #percent%",
           dataPoints: [
-            { label: "Sports", y: 10 },
-            { label: "Social Media", y: 20 },
-            { label: "Music", y: 10 },
-            { label: "Games", y: 5 },
-            { label: "Engineering", y: 55 }
+            { label: "Sports & fitness", y: 10 },
+            { label: "Social Networking", y: 20 },
+            { label: "Music", y: 5 },
+            { label: "Family", y: 15 },
+            { label: "Engineering", y: 50 }
           ]
         }]
       };

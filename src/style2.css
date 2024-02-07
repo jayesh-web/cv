@@ -1,5 +1,5 @@
-h1,h3{
-color:red;
+h1,h3,.developer{
+color:rgb(30, 103, 198);
 }
 div.name{
 text-align:right;

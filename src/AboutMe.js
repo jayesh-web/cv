@@ -2,7 +2,8 @@ import React from 'react';
 import MyTime from './myTime';
 // import './style2.css'; // Import CSS file if needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar,faCalendar,faEnvelope,faPhone,faLocation, faGraduationCap, faCalendarDay, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic } from '@fortawesome/free-solid-svg-icons';
+import { faStar,faCalendar,faEnvelope,faPhone,faLocation, faGraduationCap, faCalendarDay, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic, faX } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faTwitter, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function AboutUs() {
     return (
@@ -30,7 +31,7 @@ function AboutUs() {
                         <center><img src = {"/jayesh.jpg"} width="110px" height="93px" className="rounded-circle" alt="Jayesh Kumar" /></center>
                         <hr />
                     </div>
-                    <h4 className="ml-3">Experienced software engineer specializing in frontend and backend. Passionate about solving complex problems and delivering innovative solutions that exceed client expectations in dynamic environments.</h4>
+                    <h6 className="ml-3">Experienced software engineer specializing in frontend and backend. Passionate about solving complex problems and delivering innovative solutions that exceed client expectations in dynamic environments.</h6>
                 </div>
             </div>
             <hr className="main" />
@@ -137,18 +138,33 @@ function AboutUs() {
                 </div>
                 <div className="col-sm-5" style={{ backgroundColor: "#F8F8F8" }}>
                     <h5>FIND ME ONLINE</h5><hr className="field" />
-                    <i className="fab fa-linkedin-in text-warning"></i>&emsp;/jayeshkumar
-                    <hr />
-                    <i className="fab fa-twitter text-warning"></i>&emsp;@Jayeshkumar
+                    <div className="d-flex align-items-center mr-3">
+                        <a href='https://www.linkedin.com/in/jayesh-k-b7b07b1a0/overlay/contact-info/' target="_blank">
+                        <FontAwesomeIcon icon={faLinkedin} style={{height:"50px"}} />
+                        </a>
+                        <div className='mx-4'>
+                        <a href='https://twitter.com/jayeshsuthar07' target="_blank">
+                            <FontAwesomeIcon icon={faXTwitter} style={{height:"50px"}} className='text-black' />
+                        </a>
+                        </div>
+                        <div className=''>
+                        <a href='https://wa.me/+919414624683' target="_blank">
+                            <FontAwesomeIcon icon={faWhatsapp} style={{height:"50px", color:"#25D366"}}  />
+                        </a>
+                        </div>
+                    </div>
+                    
                     <hr />
                     <h5>Languages</h5><hr className="field" />
                     <i className="ml-3">Hindi</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(5)} 
                     <hr />
-                    <i className="ml-3">English  </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(4)}
+                    <i className="ml-3">English </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(4)}
+                    <hr />
+                    <i className="ml-3">Gujarati</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(3)} 
                     <hr />
 
                     <h5>MY LIFE PHILOSOPHY</h5><hr className="field" />
-                    {/* <p className="text-warning">Anyone who has ever made anything of importance was disciplined. </p> */}
+                    <p className="text-warning">Anyone who has ever made anything of importance was disciplined. </p>
                     {/* <p className="text-warning">{ thought }</p>
                     <p className="text-right">{author}</p> */}
                     <hr />
@@ -160,7 +176,7 @@ function AboutUs() {
             </div>
         </div>
         <div className="footer">
-            <developer style={{ color: "red" }}>Jayesh Kumar</developer>  Copyright &copy; 2024. All right reserved
+            <developer className = "developer">Jayesh Kumar</developer>  Copyright &copy; 2024. All right reserved
         </div>
     </div>
 );
