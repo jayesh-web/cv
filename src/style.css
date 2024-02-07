@@ -1,0 +1,71 @@
+h1,h3{
+color:red;
+}
+div.name{
+text-align:right;
+color:red;
+margin-right: 150px;
+}
+div.footer
+{
+position: fixed;
+   left:0;
+   bottom: 0;
+   background-color:black;
+   width: 100%;
+   color:white;
+   text-align: center;
+   font-weight:bold;
+}
+hr
+{
+border-top: 2px solid red;
+}
+div.goto{
+float:left;
+}
+th,td{
+text-align:center;
+}
+@media screen and (max-width: 800px){
+.name, .footer{
+width:100%;
+}
+}
+@media screen and (max-width: 800px){
+  .name, .footer{
+  width:100%;
+  }}
+@media only screen and (max-width: 600px) {
+  img.photo {
+   visibility: hidden;
+  }
+}
+
+ .block{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: grey;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid black;
+}
+
+h1,h2
+{
+border :2px solid red;
+background-color:cyan;
+position:float-left;
+animation:transition;
+display:block;
+cursor:cursor;
+text:bold;
+}
+.class{
+color:red;
+background-color:cyan;
+}
