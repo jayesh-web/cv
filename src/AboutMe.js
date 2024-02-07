@@ -75,7 +75,7 @@ function AboutUs() {
                         <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Ahmedabad<hr />
                         <h6 className="text-warning">Contribution system</h6>
                         <ul>
-                            <li>
+                            <li> 
                                 A Web Application using Django2.2 with Python3.6 and MySql
                             </li>
                             <li>
