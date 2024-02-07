@@ -1,5 +1,8 @@
 import React from 'react';
+import MyTime from './MyTime';
 // import './style2.css'; // Import CSS file if needed
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar,faCalendar,faEnvelope,faPhone,faLocation, faGraduationCap, faCalendarDay, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 function AboutUs() {
     return (
@@ -13,10 +16,13 @@ function AboutUs() {
                         <center>
                             <h3 className="name">Jayesh Kumar</h3>
                             <h6 className="profession text-warning">Software Engineer</h6>
-                            <i className="fa fa-envelope text-warning"></i><email> jayesh.suthar07@gmail.com</email>
-                            <i className="fa fa-phone text-warning"></i> 9414624683
-                            <i className="fa fa-map-marker-alt text-warning"></i><location> Ahmedabad</location>
-                        </center>
+                            <FontAwesomeIcon icon={faEnvelope}className='text-warning' /><email> jayesh.suthar07@gmail.com</email>
+                            <span className="mx-2">|</span> 
+<FontAwesomeIcon icon={faPhone}className='text-warning' />
+<phone> 9414624683</phone><span className="mx-2">|</span> 
+
+                            <FontAwesomeIcon icon={faLocation}className='text-warning' /><location> Ahmedabad</location>
+                            </center>
                         <hr />
                     </div>
                     <div className="col-sm-4 mt-1">
@@ -32,16 +38,16 @@ function AboutUs() {
                     <div className="col-sm-7" style={{ backgroundColor: "#F5F5F5" }}>
                         <h5>EDUCATION</h5>
                         <hr className="field" />
-                        <i className='fas fa-graduation-cap text-warning'></i><h6 className="text-left mr-3" style={{ float: "right" }}>CGPA/GRADE</h6>
+                        <FontAwesomeIcon icon={faGraduationCap}className='text-warning' /><h6 className="text-left mr-3" style={{ float: "right" }}>CGPA/GRADE</h6>
                         <h5> Diploma in Advance Computing</h5><h6 className="text-warning mr-5" style={{ float: "right" }}>A</h6>
                         <p className="text-warning">C-DAC, Pune</p>
-                        <i className="fa fa-calendar"> 2011-2012 </i>&emsp;
-                        <i className="fa fa-map-marker-alt"> Mumbai</i><hr />
-                        <i className='fas fa-graduation-cap text-warning'></i><h6 className="text-left mr-3" style={{ float: "right" }}>PERCENTAGE</h6>
+                        <FontAwesomeIcon icon={faCalendarAlt}className='text-warning' /> 2011-2012 &emsp;
+                        <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Mumbai<hr />
+                        <FontAwesomeIcon icon={faGraduationCap}className='text-warning' /><h6 className="text-left mr-3" style={{ float: "right" }}>PERCENTAGE</h6>
                         <h5> Bachelor of Technology(IT)</h5><h6 className="text-warning mr-5" style={{ float: "right" }}>82.1%</h6>
                         <p className="text-warning">Rajasthan Technical University, Kota</p>
-                        <i className="fa fa-calendar"> 2006-2010 </i>&emsp;
-                        <i className="fa fa-map-marker-alt"> Jaipur</i><hr />
+                        <FontAwesomeIcon icon={faCalendarAlt}className='text-warning' /> 2006-2010 &emsp;
+                        <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Jaipur<hr />
                     </div>
                     <div className="col-sm-5" style={{ backgroundColor: "#F8F8F8" }}>
                         <h5 >SKILLS</h5><hr className="field" />
@@ -54,18 +60,19 @@ function AboutUs() {
                         <img src={require('./bootstrap4.png')} height="60px" width="70px" alt="Bootstrap" /> &emsp; */}
                         <hr />
                         <h5 >PASSIONS</h5><hr className="field" />
-                        <i className="fas fa-futbol text-warning"></i> Sports <span className="fas fa-music text-warning ml-5"></span>
-                        Love Music
+                        <FontAwesomeIcon icon ={faFutbol} className='text-warning'/> Sports <span className="fas fa-music text-warning ml-5"></span>
+                       <hr/>
+                       <FontAwesomeIcon icon = {faMusic} className='text-warning'/> Love Music
                         <hr />
-                        <i className="fas fa-user-friends text-warning"></i>&emsp;Collaboration and Team Work
+                        <FontAwesomeIcon icon={faUserFriends} className = "text-warning"/> Collaboration and Team Work
                         <hr />
                     </div>
                     <div className="col-sm-7" style={{ backgroundColor: "#F5F5F5" }}>
                         <h5>CONTRIBUTION</h5><hr className="field" />
                         <h5>Python Developer</h5>
                         <p className="text-warning">Self</p>
-                        <i className="fa fa-calendar"> Jan,2020-Ongoing</i>&emsp;
-                        <i className="fa fa-map-marker-alt"> Ahmedabad</i><hr />
+                        <FontAwesomeIcon icon={faCalendarAlt}className='text-warning' /> Jan,2020-Ongoing&emsp;
+                        <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Ahmedabad<hr />
                         <h6 className="text-warning">Contribution system</h6>
                         <ul>
                             <li>
@@ -79,7 +86,9 @@ function AboutUs() {
                                 services to all the roommy's
 </li>
 </ul>
-<a href="http://jjkumar.pythonanywhere.com/" target="_blank">Have a Glance</a><br />
+{/* <a href="http://jjkumar.pythonanywhere.com/" target="_blank">Have a Glance</a><br /> */}
+<a href="http://jayeshkumar.vercel.app/" target="_blank">Have a Glance</a><br />
+
 <hr />
 <h6 className="text-warning">Student Management System</h6>
                     <ul>
@@ -99,8 +108,8 @@ function AboutUs() {
                     <hr />
                     <h5>Junior Magento Developer</h5>
                     <p className="text-warning">Viha Digital Commerce Pvt.Ltd</p>
-                    <i className="fa fa-calendar"> Jan 1<sup>st</sup>,2020-Ongoing</i>&emsp;
-                    <i className="fa fa-map-marker-alt"> Ahmedabad</i><hr />
+                    <FontAwesomeIcon icon={faCalendarAlt}className='text-warning' /> Jan 1<sup>st</sup>,2020-Ongoing&emsp;
+                    <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Ahmedabad<hr />
                     <h6 className="text-warning">Order Number Customization</h6>
                     <ul>
                         <li>
@@ -134,10 +143,9 @@ function AboutUs() {
                     <i className="fab fa-twitter text-warning"></i>&emsp;@Jayeshkumar
                     <hr />
                     <h5>Languages</h5><hr className="field" />
-                    <i className="ml-3">Hindi</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i className="fa fa-star" aria-hidden="true" ></i><i className="fa fa-star text-warning" ></i><i className="fa fa-star text-warning" ></i><i className="fa fa-star text-warning" ></i><i className="fa fa-star text-warning" ></i>
+                    <i className="ml-3">Hindi</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(5)} 
                     <hr />
-                    <i className="ml-3">English  </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <i className="fa fa-star text-warning" ></i><i className="fa fa-star text-warning" ></i><i className="fa fa-star text-warning" ></i><i className="fa fa-star" ></i><i className="fa fa-star" ></i>
+                    <i className="ml-3">English  </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(4)}
                     <hr />
 
                     <h5>MY LIFE PHILOSOPHY</h5><hr className="field" />
@@ -146,16 +154,24 @@ function AboutUs() {
                     <p className="text-right">{author}</p> */}
                     <hr />
                     <h5>MY TIME</h5><hr className="field" />
-                    <div id="chartContainer" style={{ height: "350px", width: "100%" }}></div>
+                    {/* <div id="chartContainer" style={{ height: "350px", width: "100%" }}></div> */}
+                    <MyTime/>
                     <hr />
                 </div>
             </div>
         </div>
         <div className="footer">
-            <developer style={{ color: "red" }}>Jayesh Kumar</developer>  Copyright &copy; 2020. All right reserved
+            <developer style={{ color: "red" }}>Jayesh Kumar</developer>  Copyright &copy; 2024. All right reserved
         </div>
     </div>
 );
     }
+    const displayStar = (num) => {
+        const stars = [];
+        for (let i = 0; i < num; i++) {
+          stars.push(<FontAwesomeIcon key={i} icon={faStar} className='text-warning' />);
+        }
+        return stars;
+      };
 
     export default AboutUs;
