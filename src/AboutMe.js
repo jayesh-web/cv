@@ -1,5 +1,5 @@
 import React from 'react';
-import MyTime from './MyTime';
+import MyTime from './myTime';
 // import './style2.css'; // Import CSS file if needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faCalendar,faEnvelope,faPhone,faLocation, faGraduationCap, faCalendarDay, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic } from '@fortawesome/free-solid-svg-icons';
