@@ -11,6 +11,7 @@ function MyTime() {
       // Create the chart options
       const options = {
         animationEnabled: true,
+        backgroundColor: "",
         title: {
           text: "My Time"
         },

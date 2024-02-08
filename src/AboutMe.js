@@ -62,18 +62,37 @@ function AboutUs() {
                         <h5 >PASSIONS</h5><hr className="field" />
                         <FontAwesomeIcon icon ={faFutbol} className='text-warning'/> Sports <span className="fas fa-music text-warning ml-5"></span>
                        <hr/>
-                       <FontAwesomeIcon icon = {faMusic} className='text-warning'/> Love Music
+                       <FontAwesomeIcon icon = {faMusic} className='text-warning'/> Listening Music
                         <hr />
                         <FontAwesomeIcon icon={faUserFriends} className = "text-warning"/> Collaboration and Team Work
                         <hr />
                     </div>
                     <div className="col-sm-7" style={{ backgroundColor: "#F5F5F5" }}>
                         <h5>CONTRIBUTION</h5><hr className="field" />
+                        <h5>Software Engineer</h5>
+                        <p className="text-warning">Codiste Pvt.Ltd.</p>
+                        <FontAwesomeIcon icon={faCalendarAlt}className='text-warning' /> Aug,2022-Jan,2024&emsp;
+                        <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Ahmedabad<hr />
+                        <h6 className="text-warning">Brainpulses</h6>
+                        <ul>
+                            <li> 
+A web Application  created in react as frontend,node as a backend service,azzure for storage.                            </li>
+                            <li>
+Admin panel is developed for manage contest,sponsors,quizes.</li>
+                            <li>
+                               web app is used to attend quizes by the enrolled user.
+</li>
+</ul>
+{/* <a href="http://jjkumar.pythonanywhere.com/" target="_blank">Have a Glance</a><br /> */}
+<a href="http://jayeshkumar.vercel.app/" target="_blank">Have a Glance</a><br />
+
+<hr />
+                        
                         <h5>Python Developer</h5>
                         <p className="text-warning">Self</p>
                         <FontAwesomeIcon icon={faCalendarAlt}className='text-warning' /> Jan,2020-Ongoing&emsp;
                         <FontAwesomeIcon icon={faMapMarkerAlt}className='text-warning' /> Ahmedabad<hr />
-                        <h6 className="text-warning">Contribution system</h6>
+                        <h6 className="text-warning">Share It</h6>
                         <ul>
                             <li> 
                                 A Web Application using Django2.2 with Python3.6 and MySql
@@ -122,7 +141,7 @@ function AboutUs() {
                     <hr />
                     <h6 className="text-warning">Product Management System</h6>
                     <ul>
-                        <li>A web Application for product management for comeletely seller end
+                        <li>A Admin web Application for product management for comeletely seller end
                         </li>
                         <li>
                             Seller can create, update, delete product of own
