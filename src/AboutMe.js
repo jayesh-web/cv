@@ -183,11 +183,44 @@ Admin panel is developed for manage contest,sponsors,quizes.</li>
                     
                     <hr />
                     <h5>Languages</h5><hr className="field" />
-                    <i className="ml-3">Hindi</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(5)} 
+                    {/* <i className="ml-3">Hindi</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(5)}  */}
+                    <div className="container">
+                <div className="row">
+                    <div className="col-sm-3">
+                        <div className="ml-3">English</div>
+                    </div>
+                    <div className='col-sm-2'></div>
+                    <div className="col-sm-5">
+                        <div>{displayStar(4)}</div>
+                    </div>
+                </div>
+            </div>
                     <hr />
-                    <i className="ml-3">English </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(4)}
+                    {/* <i className="ml-3">English </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(4)} */}
+                    <div className="container">
+                <div className="row">
+                    <div className="col-sm-3">
+                        <div className="ml-3">Hindi</div>
+                    </div>
+                    <div className='col-sm-2'></div>
+                    <div className="col-sm-5">
+                        <div>{displayStar(5)}</div>
+                    </div>
+                </div>
+            </div>
                     <hr />
-                    <i className="ml-3">Gujarati</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(3)} 
+                    {/* <i className="ml-3">Gujarati</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(3)}  */}
+                    <div className="container">
+                <div className="row">
+                    <div className="col-sm-3">
+                        <div className="ml-3">Gujarati</div>
+                    </div>
+                    <div className='col-sm-2'></div>
+                    <div className="col-sm-5">
+                        <div>{displayStar(3)}</div>
+                    </div>
+                </div>
+            </div>
                     <hr />
 
                     <h5>MY LIFE PHILOSOPHY</h5><hr className="field" />
