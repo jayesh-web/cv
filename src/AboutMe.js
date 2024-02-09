@@ -260,40 +260,69 @@ const TechStack = ()=>{
         </div>
       );
     }
+    // const handleExportPDF = () => {
+    //     // Capture the content of the visible page
+    //     const contentToExport = document.getElementById('content_to_export');
+    //     if (!contentToExport) {
+    //         // console.error("Content to export not found");
+    //         return;
+    //     }
+    
+    //     // console.log("Content to export:", contentToExport);
+    //     // const height = contentToExport.scrollHeight;
+    
+    //     // const width = body.width;
+
+    //     setTimeout(() => {
+    //         // Capture the entire document body
+    //         html2canvas(contentToExport).then(canvas => {
+    //             // Convert the captured content to an image data URL
+    //             const imgData = canvas.toDataURL('image/png');
+    
+    //             // Create a new jsPDF instance
+    //             // const pdf = new jsPDF();
+    //             const pdf = new jsPDF('p', 'pt', 'a4');
+
+    
+    //             // Calculate the width and height of the PDF page (same as the captured content)
+    //             const width = pdf.internal.pageSize.getWidth();
+    //             const height = pdf.internal.pageSize.getHeight();
+    
+    //             // Add the captured content as an image to the PDF
+    //             pdf.addImage(imgData, 'PNG', 0, 0, width, height);
+    
+    //             // Save the PDF file
+    //             pdf.save('Jayesh_Kumar.pdf');
+    //         });
+    //     }, 1000);
+    // };
     const handleExportPDF = () => {
         // Capture the content of the visible page
         const contentToExport = document.getElementById('content_to_export');
         if (!contentToExport) {
-            // console.error("Content to export not found");
             return;
         }
-    
-        // console.log("Content to export:", contentToExport);
-        // const height = contentToExport.scrollHeight;
-    
-        // const width = body.width;
 
         setTimeout(() => {
             // Capture the entire document body
             html2canvas(contentToExport).then(canvas => {
                 // Convert the captured content to an image data URL
                 const imgData = canvas.toDataURL('image/png');
-    
-                // Create a new jsPDF instance
-                const pdf = new jsPDF();
-    
-                // Calculate the width and height of the PDF page (same as the captured content)
-                const width = pdf.internal.pageSize.getWidth();
-                const height = pdf.internal.pageSize.getHeight();
-    
+
+                // Create a new jsPDF instance with custom page size (for mobile)
+                const pdf = new jsPDF({
+                    orientation: 'portrait', // or 'landscape'
+                    unit: 'px', // units: 'pt', 'mm', 'cm', 'in'
+                    format: [canvas.width, canvas.height] // width and height of the canvas
+                });
+
                 // Add the captured content as an image to the PDF
-                pdf.addImage(imgData, 'PNG', 0, 0, width, height);
-    
+                pdf.addImage(imgData, 'PNG', 0, 0);
+
                 // Save the PDF file
                 pdf.save('Jayesh_Kumar.pdf');
             });
         }, 1000);
     };
-    
 
     export default AboutUs;
