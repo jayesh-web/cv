@@ -2,8 +2,8 @@ import React from 'react';
 import MyTime from './myTime';
 // import './style2.css'; // Import CSS file if needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar,faCalendar,faEnvelope,faPhone,faLocation, faGraduationCap, faCalendarDay, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic, faX } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faTwitter, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faStar,faEnvelope,faPhone, faGraduationCap, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic,  faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
@@ -14,7 +14,9 @@ function AboutUs() {
             {/* <a href="http://localhost:8000" className="btn">Back</a>
             <a href="http://localhost:8000/jayesh_pdf" className="btn">Export To PDF</a> */}
 <div className="d-flex justify-content-end">
-    <button onClick={handleExportPDF} className="btn btn-primary">Export as PDF</button>
+    <button onClick={handleExportPDF} className="btn btn-primary">       
+    <FontAwesomeIcon icon={faDownload} className="mr-2" />
+</button>
 </div>
             <div id = "content_to_export">
             <div className="container">
