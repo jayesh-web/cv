@@ -186,11 +186,11 @@ Admin panel is developed for manage contest,sponsors,quizes.</li>
                     {/* <i className="ml-3">Hindi</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(5)}  */}
                     <div className="container">
                 <div className="row">
-                    <div className="col-sm-3">
+                    <div className="col-sm-6">
                         <div className="ml-3">English</div>
                     </div>
-                    <div className='col-sm-2'></div>
-                    <div className="col-sm-5">
+                    {/* <div className='col-sm-1'></div> */}
+                    <div className="col-sm-6">
                         <div>{displayStar(4)}</div>
                     </div>
                 </div>
@@ -199,11 +199,11 @@ Admin panel is developed for manage contest,sponsors,quizes.</li>
                     {/* <i className="ml-3">English </i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(4)} */}
                     <div className="container">
                 <div className="row">
-                    <div className="col-sm-3">
+                    <div className="col-sm-6">
                         <div className="ml-3">Hindi</div>
                     </div>
-                    <div className='col-sm-2'></div>
-                    <div className="col-sm-5">
+                    {/* <div className='col-sm-2'></div> */}
+                    <div className="col-sm-6">
                         <div>{displayStar(5)}</div>
                     </div>
                 </div>
@@ -212,11 +212,11 @@ Admin panel is developed for manage contest,sponsors,quizes.</li>
                     {/* <i className="ml-3">Gujarati</i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{displayStar(3)}  */}
                     <div className="container">
                 <div className="row">
-                    <div className="col-sm-3">
+                    <div className="col-sm-6">
                         <div className="ml-3">Gujarati</div>
                     </div>
-                    <div className='col-sm-2'></div>
-                    <div className="col-sm-5">
+                    {/* <div className='col-sm-2'></div> */}
+                    <div className="col-sm-6">
                         <div>{displayStar(3)}</div>
                     </div>
                 </div>
