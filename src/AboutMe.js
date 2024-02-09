@@ -348,9 +348,10 @@ const TechStack = ()=>{
                     unit: 'px', // units: 'pt', 'mm', 'cm', 'in'
                     format: [canvas.width, canvas.height] // width and height of the canvas
                 });
-
+                const width = pdf.internal.pageSize.getWidth();
+                const height = pdf.internal.pageSize.getHeight();
                 // Add the captured content as an image to the PDF
-                pdf.addImage(imgData, 'PNG', 0, 0);
+                pdf.addImage(imgData, 'PNG', 0, 0,width,height);
 
                 // Save the PDF file
                 pdf.save('Jayesh_Kumar.pdf');
