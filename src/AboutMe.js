@@ -4,13 +4,19 @@ import MyTime from './myTime';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faCalendar,faEnvelope,faPhone,faLocation, faGraduationCap, faCalendarDay, faCalendarAlt, faMapMarkerAlt, faFutbol, faUserFriends, faMusic, faX } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faTwitter, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
+
 
 function AboutUs() {
     return (
         <div>
             {/* <a href="http://localhost:8000" className="btn">Back</a>
             <a href="http://localhost:8000/jayesh_pdf" className="btn">Export To PDF</a> */}
-
+<div className="d-flex justify-content-end">
+    <button onClick={handleExportPDF} className="btn btn-primary">Export as PDF</button>
+</div>
+            <div id = "content_to_export">
             <div className="container">
                 <div className="row">
                     <div className=" col-sm-8 text-left mt-1">
@@ -193,7 +199,8 @@ Admin panel is developed for manage contest,sponsors,quizes.</li>
                     <hr />
                 </div>
             </div>
-        </div>
+            </div>
+            </div>
         <div className="footer">
             <developer className = "developer">Jayesh Kumar</developer>  Copyright &copy; 2024. All right reserved
         </div>
@@ -251,5 +258,40 @@ const TechStack = ()=>{
         </div>
       );
     }
+    const handleExportPDF = () => {
+        // Capture the content of the visible page
+        const contentToExport = document.getElementById('content_to_export');
+        if (!contentToExport) {
+            // console.error("Content to export not found");
+            return;
+        }
+    
+        // console.log("Content to export:", contentToExport);
+        // const height = contentToExport.scrollHeight;
+    
+        // const width = body.width;
+
+        setTimeout(() => {
+            // Capture the entire document body
+            html2canvas(contentToExport).then(canvas => {
+                // Convert the captured content to an image data URL
+                const imgData = canvas.toDataURL('image/png');
+    
+                // Create a new jsPDF instance
+                const pdf = new jsPDF();
+    
+                // Calculate the width and height of the PDF page (same as the captured content)
+                const width = pdf.internal.pageSize.getWidth();
+                const height = pdf.internal.pageSize.getHeight();
+    
+                // Add the captured content as an image to the PDF
+                pdf.addImage(imgData, 'PNG', 0, 0, width, height);
+    
+                // Save the PDF file
+                pdf.save('Jayesh_Kumar.pdf');
+            });
+        }, 1000);
+    };
+    
 
     export default AboutUs;
